@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>CoolBloem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="./index.html" class="logo">
+            <i class="fas fa-leaf fa-2x"></i>
+            <h2>Coolbloem</h2>
+        </a>
+        <nav>
+            <a href="./index.html">home</a>
+            <a class="active-link" href="./nieuws.html">nieuws</a>
+            <a href="./smoelenboek.html">smoelenboek</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="add-news">
+            <div class="add-news-container">
+                <h1 class="section-h1">Nieuw nieuwsbericht toevoegen</h1>
+            <form id="add-news-form" ref='uploadForm' action='http://localhost:3000/add-news-article' encType="multipart/form-data">
+                <div class="add-news-form-content">
+                    <div class="form-control">
+                        <label for="Title">Titel:</label>
+                        <input type="text" id="Title" name="Title">
+                    </div>
+                    <div class="form-control">
+                        <label for="Introduction">Introductie tekst:</label>
+                        <textarea id="Intro" name="Intro" row="2"></textarea>
+                    </div>
+                    <div class="form-control">
+                        <label for="Text">Tekst</label>
+                        <textarea id="Text" name="Text" row="2"></textarea>
+                    </div>
+                    <div class="form-control upload-file">
+                        <input id="ImageUpload" type="file" name="ImageUpload" hidden />
+                        <!-- our custom upload button -->
+                        <label id="styled-upload-btn" for="ImageUpload">Kies header afbeelding</label>
+                        <!-- name of file chosen -->
+                        <span id="file-chosen">Geen bestand gekozen</span>
+                    </div>
+                </div>
+                <input type='submit' value='Upload' />
+            </form>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="section-header">
+                <h1 class="section-h1">Nieuwspagina</h1>
+                <div id="add-button-container"></div>
+            </div>
+            <div id="news-list">
+                <!-- News articles will be displayed here -->
+            </div>
+        </section>
+
+        <section id="news-details">
+            <!-- A news article will be displayed here -->
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="./index.html" class="logo-small">
+                <i class="fas fa-leaf "></i>
+                <h3>Coolbloem</h3>
+            </a>
+
+            <small>
+                Onderdeel van Digital Enterprises <br>
+                © 2020 International B.V. <br><br />
+
+                Privacy statement <br>
+                Algemene voorwaarden
+            </small>
+        </div>
+
+        <div>
+
+            <adress>
+                <strong>Adres</strong>
+                Doklaan 45<br />
+                4509 UD, Naaldwijk<br />
+                Nederland<br />
+            </adress>
+
+        </div>
+    </footer>
+
+    <script type="module" src="./src/js/news/news.js"></script>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
