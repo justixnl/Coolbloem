@@ -1,0 +1,29 @@
+.shadow {
+  box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Equivalent to 0 2px 5px rgba(0, 0, 0, 0.1) */
+}
+
+.let-op {
+  color: var(--warnBirthday);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.inleiding-container {
+  display: flex;
+}
+
+.inleiding-container .inleiding-img {
+  text-align: center;
+  width: 40%;
+}
+
+.inleiding-container .inleiding-img img {
+  border-radius: 50%;
+}
+
+.inleiding-container .inleiding-content {
+  width: 60%;
+  padding: 1rem; /* Equivalent to 16px */
+}

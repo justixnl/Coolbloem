@@ -1,0 +1,70 @@
+/* ---- NEWS ---- */
+#news-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.625rem 2.625rem; /* Equivalent to 26px 42px */
+}
+
+.news-article {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0 0 0 / 20%), -0.0625rem 0.0625rem 0.3125rem rgba(0 0 0 / 20%); /* Equivalent to 1px 3px 5px rgba(0 0 0 / 20%), -1px 1px 5px rgba(0 0 0 / 20%) */
+  padding: 1rem; /* Equivalent to 16px */
+  width: 48%;
+}
+
+.news-article:first-child {
+  flex-direction: row;
+  width: 100%;
+  height: 60vh;
+}
+
+.news-article:first-child .img-container {
+  width: 40%;
+}
+
+.news-article:first-child .news-preview {
+  width: 60%;
+}
+
+.news-article .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-article .img-container {
+  width: calc(100% + 2rem); /* Width of image container + padding on both sides */
+  margin: -1rem 0 -1rem -1rem; /* Negate the padding */
+}
+
+.news-article .news-preview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; /* Equivalent to 16px */
+  justify-content: space-between;
+}
+
+.news-article h3 {
+  margin-top: 1rem; /* Equivalent to 16px */
+  color: var(--secondary);
+}
+
+.news-article:first-child h3 {
+  margin-top: 0;
+}
+
+.news-article-date {
+  font-style: italic;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.news-details-intro {
+  font-size: 0.875rem; /* Equivalent to 14px */
+  color: #858585;
+  text-align: center;
+  margin-top: 0.5rem; /* Equivalent to 8px */
+}

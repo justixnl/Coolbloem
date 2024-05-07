@@ -1,0 +1,89 @@
+#smoelenboek-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#smoelenboek-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.6875rem 9.8125rem; /* Equivalent to 75px 158px */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.smoelenboek-article {
+  width: 15.625rem; /* Equivalent to 250px */
+  height: 21.875rem; /* Equivalent to 350px */
+  border-radius: 0;
+
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.2), -0.0625rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.2); /* Equivalent to 1px 3px 5px rgba(0, 0, 0, 0.2), -1px 1px 5px rgba(0, 0, 0, 0.2) */
+}
+
+#upComingBirthday {
+  background-color: var(--white);
+  margin-bottom: 4.375rem; /* Equivalent to 70px */
+  box-shadow: 0.0625rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.2), -0.0625rem 0.0625rem 0.3125rem rgba(0, 0, 0, 0.2); /* Equivalent to 1px 3px 5px rgba(0, 0, 0, 0.2), -1px 1px 5px rgba(0, 0, 0, 0.2) */
+  display: flex;
+  justify-content: space-around;
+}
+
+.upcoming-birthday-article {
+  background-color: initial;
+  box-shadow: initial;
+}
+
+.upcoming-birthday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.profile-avatar {
+  height: 10.9375rem; /* Equivalent to 175px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.profile-avatar img {
+  height: 9.375rem; /* Equivalent to 150px */
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: 0px 0.0625rem 0.40625rem rgba(0, 0, 0, 0.3); /* Equivalent to 0px 1px 26px rgba(0, 0, 0, 0.3) */
+}
+
+.profile-content {
+  display: flex;
+  gap: 0.25rem; /* Equivalent to 4px */
+  padding: 1rem; /* Equivalent to 16px */
+  flex-direction: column;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.profile-name {
+  font-size: 1.125rem; /* Equivalent to 18px */
+  font-weight: bold;
+  color: #96b23c; /* HERE */
+}
+
+.profile-telephoneNumber {
+  font-size: 0.875rem; /* Equivalent to 14px */
+  font-style: italic;
+  color: #555555;
+}
+
+.profile-email {
+  font-size: 0.875rem; /* Equivalent to 14px */
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  color: #555555;
+}

@@ -1,0 +1,70 @@
+#add-personnel {
+  max-width: 68.75rem; /* Equivalent to 1100px */
+  min-height: 31.25rem; /* Equivalent to 500px */
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1.25rem; /* Equivalent to 20px */
+  display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Adjust for element size */
+  z-index: 9999;
+
+  /* Additional styling */
+  background-color: var(--white);
+  border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* Equivalent to 10px */
+}
+
+#add-news {
+  display: none;
+  margin: auto;
+  padding: 1rem; /* Equivalent to 16px */
+  max-height: 43.75rem; /* Equivalent to 700px */
+  max-width: 68.75rem; /* Equivalent to 1100px */
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--white);
+  border: 0.0625rem solid #ccc; /* Equivalent to 1px */
+  box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* Equivalent to 10px */
+
+  position: fixed; /* Position the element relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for element size */
+  z-index: 9999; /* Ensure it's above other elements */
+}
+
+.add-news-container .section-h1,
+#add-personnel .section-h1 {
+  margin-bottom: 1rem; /* Equivalent to 16px */
+}
+
+.add-news-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#add-news-form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.add-news-form-content {
+  height: calc(100% - 4.6875rem); /* Equivalent to 75px */
+}
+
+.add-news-form-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upload-file {
+  margin-top: 1rem; /* Equivalent to 16px */
+}

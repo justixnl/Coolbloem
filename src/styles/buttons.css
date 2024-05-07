@@ -1,0 +1,86 @@
+form input[type="submit"],
+form button {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.875rem 1.25rem; /* Equivalent to 14px 20px */
+  margin: 0.5rem 0; /* Equivalent to 8px 0 */
+  border: none;
+  border-radius: 0.25rem; /* Equivalent to 4px */
+  cursor: pointer;
+}
+
+form #styled-upload-btn {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem 1rem; /* Equivalent to 8px 16px */
+  margin: 0.5rem 0; /* Equivalent to 8px 0 */
+  border: none;
+  border-radius: 0.25rem; /* Equivalent to 4px */
+  cursor: pointer;
+}
+
+#file-chosen {
+  margin-left: 0.01875rem; /* Equivalent to 0.3px */
+  font-family: sans-serif;
+}
+
+form input[type="submit"]:hover,
+form button:hover,
+form #styled-upload-btn:hover,
+.read-more:hover,
+.add-request-button:hover {
+  background-color: var(--secondary);
+}
+
+.read-more {
+  background-color: var(--primary);
+  border: none;
+  color: var(--white);
+  padding: 0.75rem; /* Equivalent to 12px */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem; /* Equivalent to 16px */
+  margin: 0.25rem 0.125rem; /* Equivalent to 4px 2px */
+  margin-top: 1.5rem; /* Equivalent to 24px */
+  cursor: pointer;
+  border-radius: 0.25rem; /* Equivalent to 4px */
+  max-width: 12.5rem; /* Equivalent to 200px */
+}
+
+.add-request-button {
+  background-color: var(--primary);
+  border: none;
+  color: var(--white);
+  padding: 0.75rem; /* Equivalent to 12px */
+  text-align: center;
+  text-decoration: none;
+  align-items: center; /* Align items vertically */
+  font-size: 1rem; /* Equivalent to 16px */
+  margin: 0.25rem 0.125rem; /* Equivalent to 4px 2px */
+  cursor: pointer;
+  border-radius: 0.25rem; /* Equivalent to 4px */
+  max-width: 12.5rem; /* Equivalent to 200px */
+}
+
+.add-request-button i {
+  margin-right: 0.5rem; /* Equivalent to 8px */
+}
+
+.add-button-icon {
+  color: var(--white);
+}
+
+.pill {
+  background-color: #ffc80c;
+  border: none;
+  color: black;
+  padding: 0.125rem 1.125rem; /* Equivalent to 2px 18px */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem 0.125rem; /* Equivalent to 8px 2px */
+  border-radius: 1rem; /* Equivalent to 16px */
+}
